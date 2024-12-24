@@ -1,10 +1,9 @@
 import { Module } from '@nestjs/common';
-import { AppController } from './app.controller';
-import { AppService } from './app.service';
+import { PrometheusService } from './prometheus/prometheus.service';
+import { PrometheusController } from './prometheus/prometheus.controller';
 
 @Module({
-  imports: [],
-  controllers: [AppController],
-  providers: [AppService],
+  controllers: [PrometheusController],
+  providers: [PrometheusService],
 })
 export class AppModule {}
